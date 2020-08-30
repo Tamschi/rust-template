@@ -1,4 +1,4 @@
-# fn-formats ('Function Formats')
+# fn-formats
 
 This is a small shim library for passing closures where you need one of the format traits (including [`Binary`] etc.).
 
