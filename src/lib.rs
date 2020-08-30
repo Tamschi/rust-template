@@ -5,12 +5,12 @@
 //! ```rust
 //! use fn_formats::DebugFmt;
 //!
-//! let formattable: DebugFmt<_> = (|f: &mut core::fmt::Formatter| {
+//! let formattable = DebugFmt(|f: &mut core::fmt::Formatter| {
 //!     f.debug_struct("StructName")
 //!         .field("list", &DebugFmt(|f| f.debug_list().entries(&[1, 2, 3]).finish()))
 //!         .field("set", &DebugFmt(|f| f.debug_set().entries(&[4, 5, 6]).finish()))
 //!         .finish()
-//! }).into();
+//! });
 //!
 //! assert_eq!(format!("{:?}", formattable), "StructName { list: [1, 2, 3], set: {4, 5, 6} }");
 //! ```
