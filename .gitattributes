@@ -1,0 +1,7 @@
+/.git* text eol=lf
+
+*.json text eol=lf
+*.toml text eol=lf
+
+.editorconfig text eol=lf
+Cargo.lock text eol=lf

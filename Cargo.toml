@@ -1,0 +1,22 @@
+[package]
+name = "fn-formats"
+version = "0.0.1"
+authors = ["Tamme Schichler <tamme@schichler.dev>"]
+edition = "2018"
+description = "Format trait wrappers for Fn(&mut Formatter) -> fmt::Result"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Tamschi/fn-formats"
+tags = ["fluent", "Debug", "Display", "format", "no_std"]
+categories = ["value-formatting", "development-tools::debugging"]
+readme = "README.md"
+include = [
+	"**/*.rs",
+	"Cargo.toml",
+	"LICENSE-*",
+	"README.md",
+]
+publish = false
+
+[dev-dependencies]
+cargo-husky = "1.5.0"
+doc-comment = "0.3.3"
