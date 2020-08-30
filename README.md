@@ -1,4 +1,4 @@
-# fmt-fn ('Format Function')
+# fn-formats ('Function Formats')
 
 This is a small shim library for passing closures where you need one of the format traits (including [`Binary`] etc.).
 

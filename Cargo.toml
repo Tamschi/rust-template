@@ -1,6 +1,6 @@
 [package]
 name = "fn-formats"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["Tamme Schichler <tamme@schichler.dev>"]
 edition = "2018"
 description = "Format trait wrappers for Fn(&mut Formatter) -> fmt::Result"
