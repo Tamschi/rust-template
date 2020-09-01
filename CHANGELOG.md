@@ -1,5 +1,12 @@
 # fn-formats Changelog
 
+## next
+
+Fixed:
+
+* Keywords in Cargo.toml
+* "CHANGLOG.md" link in [README.md](README.md)'s Versioning section
+
 ## 0.0.3
 
 2020-09-01

@@ -47,4 +47,4 @@ Consider it the global feature level.
 * The patch version will not reset to 0 on major or minor version changes (except for v0.1 and v1).  
 Consider it the global patch level.
 
-Which versions are affected by features and patches can be determined from the respective headings in <CHANGELOG.md>.
+Which versions are affected by features and patches can be determined from the respective headings in [CHANGELOG.md](CHANGELOG.md).
