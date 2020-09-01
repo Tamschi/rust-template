@@ -25,6 +25,7 @@
 //! [`From`]: https://doc.rust-lang.org/stable/std/convert/trait.From.html
 
 #![no_std]
+#![doc(html_root_url = "https://docs.rs/fn-formats/0.0.3")]
 
 #[cfg(doctest)]
 pub mod readme {

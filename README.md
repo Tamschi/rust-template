@@ -35,3 +35,16 @@ at your option.
 Unless you explicitly state otherwise, any contribution intentionally submitted
 for inclusion in the work by you, as defined in the Apache-2.0 license, shall be
 dual licensed as above, without any additional terms or conditions.
+
+## [Changelog](CHANGELOG.md)
+
+## Versioning
+
+`fn-formats` strictly follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) with the following exceptions:
+
+* The minor version will not reset to 0 on major version changes (except for v1).  
+Consider it the global feature level.
+* The patch version will not reset to 0 on major or minor version changes (except for v0.1 and v1).  
+Consider it the global patch level.
+
+Which versions are affected by features and patches can be determined from the respective headings in <CHANGELOG.md>.
