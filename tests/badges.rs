@@ -7,7 +7,13 @@ fn weak_assert_branch() {
 	let info = git_info::get();
 
 	if let Some(branch) = info.current_branch {
-		assert_eq!(BRANCH, branch);
+		if !branch.contains("HEAD detached") {
+			assert_eq!(BRANCH, branch);
+		} else {
+			eprintln!("Branch assert ignored: HEAD detached")
+		}
+	} else {
+		eprintln!("Branch assert ignored: No branch information available")
 	}
 }
 
