@@ -3,6 +3,15 @@ const USER: &str = "Tamschi";
 const RUST_VERSION: &str = "1.46.0";
 
 #[test]
+fn weak_assert_branch() {
+	let info = git_info::get();
+
+	if let Some(branch) = info.current_branch {
+		assert_eq!(BRANCH, branch);
+	}
+}
+
+#[test]
 fn lib() {
 	version_sync::assert_contains_regex!(
 		"README.md",
