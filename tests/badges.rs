@@ -19,6 +19,14 @@ fn crates() {
 }
 
 #[test]
+fn docs() {
+	version_sync::assert_contains_regex!(
+		"README.md",
+		r"^\[!\[Docs\.rs\]\(https://img\.shields\.io/badge/Docs\.rs-\*-black\)\]\(https://docs\.rs/crates/{name}\)$"
+	);
+}
+
+#[test]
 fn rust_version() {
 	version_sync::assert_contains_regex!(".travis.yml", &format!(r"^    - {}$", RUST_VERSION));
 
@@ -85,5 +93,13 @@ fn pulls() {
 			r"^\[!\[open pull requests\]\(https://img\.shields\.io/github/issues-pr-raw/{0}/{{name}}\)\]\(https://github\.com/{0}/{{name}}/pulls\)$",
 			USER,
 		)
+	);
+}
+
+#[test]
+fn crev() {
+	version_sync::assert_contains_regex!(
+		"README.md",
+		r"^\[!\[crev reviews\]\(https://web.crev.dev/rust-reviews/badge/crev_count/{name}.svg\)\]\(https://web\.crev\.dev/rust-reviews/crate/{name}/\)$"
 	);
 }
