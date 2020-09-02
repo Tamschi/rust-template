@@ -11,6 +11,7 @@ categories = ["value-formatting", "development-tools::debugging"]
 readme = "README.md"
 include = [
 	"**/*.rs",
+	".github/ISSUE_TEMPLATE/*.md",
 	".travis.yml",
 	"Cargo.toml",
 	"LICENSE-*",
