@@ -17,6 +17,14 @@ This is a small shim library for passing closures where you need one of the form
 
 [`Binary`]: https://doc.rust-lang.org/stable/core/fmt/trait.Binary.html
 
+## Installation
+
+Please use [cargo-edit](https://crates.io/crates/cargo-edit) to always add the latest version of this library:
+
+```cmd
+cargo add fn-formats
+```
+
 ## Example
 
 ```rust
