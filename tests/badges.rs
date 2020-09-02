@@ -43,7 +43,7 @@ fn docs() {
 
 #[test]
 fn rust_version() {
-	version_sync::assert_contains_regex!(".travis.yml", &format!(r"^    - {}$", RUST_VERSION));
+	version_sync::assert_contains_regex!(".travis.yml", &format!(r"^  - {}$", RUST_VERSION));
 
 	version_sync::assert_contains_regex!(
 		"README.md",
