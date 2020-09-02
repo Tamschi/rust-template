@@ -1,6 +1,6 @@
 # fn-formats Changelog
 
-## next
+## 0.0.4
 
 * Added README badges and CI
 
