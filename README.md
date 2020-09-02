@@ -1,5 +1,7 @@
 # fn-formats
 
+[![Build Status](https://travis-ci.com/Tamschi/fn-formats.svg?branch=develop)](https://travis-ci.com/Tamschi/fn-formats)
+
 This is a small shim library for passing closures where you need one of the format traits (including [`Binary`] etc.).
 
 [`Binary`]: https://doc.rust-lang.org/stable/core/fmt/trait.Binary.html
