@@ -27,6 +27,8 @@
 #![no_std]
 #![doc(html_root_url = "https://docs.rs/fn-formats/0.0.3")]
 
+#![warn(clippy::pedantic)]
+
 #[cfg(doctest)]
 pub mod readme {
 	doc_comment::doctest!("../README.md");
