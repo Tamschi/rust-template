@@ -2,6 +2,8 @@
 
 ## next
 
+* Added README badges and CI
+
 Fixed:
 
 * Keywords in Cargo.toml
