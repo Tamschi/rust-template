@@ -5,14 +5,18 @@ rust:
   - beta
   - nightly
 stages:
-  - name: deny warnings
-    # Running the above as only stage would likely mess up the build cache.
+  - ensure format
+  - deny warnings
   - test
 jobs:
   include:
+    - stage: ensure format
+      if: branch = develop
+      script: cargo +nightly fmt -- --check
     - stage: deny warnings
       if: branch = develop
-      script: RUSTFLAGS='-D warnings' cargo test
+      script: RUSTFLAGS='-D warnings' cargo build --all-targets
+      #TODO: Make sure this includes clippy warnings
   allow_failures:
     - rust: nightly
   fast_finish: true
