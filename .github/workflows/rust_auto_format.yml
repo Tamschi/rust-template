@@ -28,6 +28,6 @@ jobs:
       
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: cargo +nightly fmt
+        commit_message: Automatic formatting commit (cargo +nightly fmt)
         file_pattern: '**/*.rs'
         commit_author: Rust Format Action <rust-format-action@schichler.dev>
