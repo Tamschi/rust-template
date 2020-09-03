@@ -12,7 +12,9 @@ jobs:
   include:
     - stage: ensure format
       if: branch = develop
-      script: cargo +nightly fmt -- --check
+      script:
+        - rustup toolchain install nightly --profile minimal --component rustfmt
+        - cargo +nightly fmt -- --check
     - stage: deny warnings
       if: branch = develop
       script: RUSTFLAGS='-D warnings' cargo build --all-targets
