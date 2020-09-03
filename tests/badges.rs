@@ -118,5 +118,3 @@ fn crev() {
 		r"^\[!\[crev reviews\]\(https://web.crev.dev/rust-reviews/badge/crev_count/{name}.svg\)\]\(https://web\.crev\.dev/rust-reviews/crate/{name}/\)$"
 	);
 }
-
-fn unused() {}
