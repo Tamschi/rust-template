@@ -1,0 +1,28 @@
+name: Rust Auto Format
+
+on:
+  push:
+    branches: [ develop ]
+  pull_request:
+    branches: [ develop ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+      
+    - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: nightly
+    - run: cargo +nightly fmt
+      
+    - uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: cargo +nightly fmt
+        file_pattern: '**/*.rs'
+        commit_author: Rust Format Action <rust-format-action@schichler.dev>
