@@ -15,6 +15,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        # github.ref is useless on pull requests.
+        # github.head_ref only exists on pull requests.
+        ref: ${{ github.head_ref || github.ref }}
       
     - uses: actions-rs/toolchain@v1
       with:
