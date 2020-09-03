@@ -4,7 +4,15 @@ rust:
   - stable
   - beta
   - nightly
+stages:
+  - name: deny warnings
+    # Running the above as only stage would likely mess up the build cache.
+  - test
 jobs:
+  include:
+    - stage: deny warnings
+      if: branch = develop
+      script: RUSTFLAGS='-D warnings' cargo test
   allow_failures:
     - rust: nightly
   fast_finish: true

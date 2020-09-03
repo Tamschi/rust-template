@@ -45,8 +45,6 @@ fn docs() {
 
 #[test]
 fn rust_version() {
-	version_sync::assert_contains_regex!(".travis.yml", &format!(r"^  - {}$", RUST_VERSION));
-
 	version_sync::assert_contains_regex!(
 		"README.md",
 		&format!(
@@ -120,3 +118,5 @@ fn crev() {
 		r"^\[!\[crev reviews\]\(https://web.crev.dev/rust-reviews/badge/crev_count/{name}.svg\)\]\(https://web\.crev\.dev/rust-reviews/crate/{name}/\)$"
 	);
 }
+
+fn unused() {}

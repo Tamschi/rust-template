@@ -11,8 +11,7 @@ categories = ["value-formatting", "development-tools::debugging"]
 readme = "README.md"
 include = [
 	"**/*.rs",
-	".github/ISSUE_TEMPLATE/*.md",
-	".travis.yml",
+	"!tests/meta_*.rs", # Tests of meta data files not included in the package.
 	"Cargo.toml",
 	"LICENSE-*",
 	"CHANGELOG.md",
