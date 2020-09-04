@@ -17,8 +17,9 @@ jobs:
         - cargo +nightly fmt -- --check
     - stage: deny warnings
       if: branch = develop
-      script: RUSTFLAGS='-D warnings' cargo build --all-targets
-      #TODO: Make sure this includes clippy warnings
+      script:
+        - rustup component add clippy
+        - RUSTFLAGS='-D warnings' cargo build --all-targets
   allow_failures:
     - rust: nightly
   fast_finish: true
