@@ -9,6 +9,9 @@ fn weak_assert_branch() {
 	if let Some(branch) = info.current_branch {
 		if branch.contains("HEAD detached") {
 			eprintln!("Branch assert ignored: HEAD detached")
+		} else if branch == "(no branch)" {
+			// Most likely a release tag.
+			eprintln!(r#"Branch assert ignored: "(no branch)""#)
 		} else if branch.contains('-') {
 			eprintln!("Branch assert ignored: Probably a feature branch")
 		} else {
