@@ -7,9 +7,9 @@ Unclear documentation or error messages are considered bugs.
 
 For anything else, please use the ["Custom issue"] template.
 
-[bugs]: https://github.com/Tamschi/fn-formats/issues/new?assignees=&labels=bug&template=bug_report.md&title=
-[feature requests]: https://github.com/Tamschi/fn-formats/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
-["Custom issue"]: https://github.com/Tamschi/fn-formats/issues/new?assignees=&labels=&template=custom_issue.md&title=
+[bugs]: https://github.com/Tamschi/TODO_CRATE_NAME/issues/new?assignees=&labels=bug&template=bug_report.md&title=
+[feature requests]: https://github.com/Tamschi/TODO_CRATE_NAME/issues/new?assignees=&labels=enhancement&template=feature_request.md&title=
+["Custom issue"]: https://github.com/Tamschi/TODO_CRATE_NAME/issues/new?assignees=&labels=&template=custom_issue.md&title=
 
 ## Pull Requests
 

@@ -1,11 +1,11 @@
 [package]
-name = "fn-formats"
+name = "TODO_CRATE_NAME"
 version = "0.0.4"
 authors = ["Tamme Schichler <tamme@schichler.dev>"]
 edition = "2018"
-description = "Format trait wrappers for Fn(&mut Formatter) -> fmt::Result"
+description = "TODO_DESCRIPTION"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/Tamschi/fn-formats"
+repository = "https://github.com/Tamschi/TODO_CRATE_NAME"
 keywords = ["fluent", "Debug", "Display", "format", "no_std"]
 categories = ["value-formatting", "development-tools::debugging"]
 readme = "README.md"

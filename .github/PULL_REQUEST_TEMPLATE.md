@@ -1,6 +1,6 @@
 <!-- markdownlint-disable first-line-heading -->
 
-Thank you for your contribution to the `fn-formats` repository!
+Thank you for your contribution to the `TODO_CRATE_NAME` repository!
 
 Before submitting this pull request, please make sure:
 

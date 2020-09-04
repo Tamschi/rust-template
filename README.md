@@ -1,43 +1,32 @@
-# fn-formats
+# TODO_CRATE_NAME
 
-[![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/fn-formats)
-[![Crates.io](https://img.shields.io/crates/v/fn-formats)](https://crates.io/crates/fn-formats)
-[![Docs.rs](https://img.shields.io/badge/Docs.rs-*-black)](https://docs.rs/crates/fn-formats)
+[![Lib.rs](https://img.shields.io/badge/Lib.rs-*-84f)](https://lib.rs/crates/TODO_CRATE_NAME)
+[![Crates.io](https://img.shields.io/crates/v/TODO_CRATE_NAME)](https://crates.io/crates/TODO_CRATE_NAME)
+[![Docs.rs](https://img.shields.io/badge/Docs.rs-*-black)](https://docs.rs/crates/TODO_CRATE_NAME)
 
 ![Rust 1.46.0](https://img.shields.io/static/v1?logo=Rust&label=&message=1.46.0&color=grey)
-[![Build Status](https://travis-ci.com/Tamschi/fn-formats.svg?branch=develop)](https://travis-ci.com/Tamschi/fn-formats/branches)
-![Crates.io - License](https://img.shields.io/crates/l/fn-formats/0.0.4)
+[![Build Status](https://travis-ci.com/Tamschi/TODO_CRATE_NAME.svg?branch=develop)](https://travis-ci.com/Tamschi/TODO_CRATE_NAME/branches)
+![Crates.io - License](https://img.shields.io/crates/l/TODO_CRATE_NAME/0.0.4)
 
-[![GitHub](https://img.shields.io/static/v1?logo=GitHub&label=&message=%20&color=grey)](https://github.com/Tamschi/fn-formats)
-[![open issues](https://img.shields.io/github/issues-raw/Tamschi/fn-formats)](https://github.com/Tamschi/fn-formats/issues)
-[![open pull requests](https://img.shields.io/github/issues-pr-raw/Tamschi/fn-formats)](https://github.com/Tamschi/fn-formats/pulls)
-[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/fn-formats.svg)](https://web.crev.dev/rust-reviews/crate/fn-formats/)
+[![GitHub](https://img.shields.io/static/v1?logo=GitHub&label=&message=%20&color=grey)](https://github.com/Tamschi/TODO_CRATE_NAME)
+[![open issues](https://img.shields.io/github/issues-raw/Tamschi/TODO_CRATE_NAME)](https://github.com/Tamschi/TODO_CRATE_NAME/issues)
+[![open pull requests](https://img.shields.io/github/issues-pr-raw/Tamschi/TODO_CRATE_NAME)](https://github.com/Tamschi/TODO_CRATE_NAME/pulls)
+[![crev reviews](https://web.crev.dev/rust-reviews/badge/crev_count/TODO_CRATE_NAME.svg)](https://web.crev.dev/rust-reviews/crate/TODO_CRATE_NAME/)
 
-This is a small shim library for passing closures where you need one of the format traits (including [`Binary`] etc.).
-
-[`Binary`]: https://doc.rust-lang.org/stable/core/fmt/trait.Binary.html
+TODO_README_DESCRIPTION
 
 ## Installation
 
 Please use [cargo-edit](https://crates.io/crates/cargo-edit) to always add the latest version of this library:
 
 ```cmd
-cargo add fn-formats
+cargo add TODO_CRATE_NAME
 ```
 
 ## Example
 
 ```rust
-use fn_formats::DebugFmt;
-
-let debug = DebugFmt(|f| {
-    f.debug_struct("StructName")
-        .field("list", &DebugFmt(|f| f.debug_list().entries(&[1, 2, 3]).finish()))
-        .field("set", &DebugFmt(|f| f.debug_set().entries(&[4, 5, 6]).finish()))
-        .finish()
-});
-
-assert_eq!(format!("{:?}", debug), "StructName { list: [1, 2, 3], set: {4, 5, 6} }");
+TODO_EXAMPLE
 ```
 
 ## License
@@ -63,7 +52,7 @@ dual licensed as above, without any additional terms or conditions.
 
 ## Versioning
 
-`fn-formats` strictly follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) with the following exceptions:
+`TODO_CRATE_NAME` strictly follows [Semantic Versioning 2.0.0](https://semver.org/spec/v2.0.0.html) with the following exceptions:
 
 * The minor version will not reset to 0 on major version changes (except for v1).  
 Consider it the global feature level.
