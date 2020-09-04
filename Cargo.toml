@@ -6,8 +6,8 @@ edition = "2018"
 description = "TODO_DESCRIPTION"
 license = "MIT OR Apache-2.0"
 repository = "https://github.com/Tamschi/TODO_CRATE_NAME"
-keywords = ["fluent", "Debug", "Display", "format", "no_std"]
-categories = ["value-formatting", "development-tools::debugging"]
+keywords = [TODO]
+categories = [TODO]
 readme = "README.md"
 include = [
 	"**/*.rs",
