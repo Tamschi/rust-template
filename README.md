@@ -60,6 +60,6 @@ Consider it the global feature level.
 Consider it the global patch level.
 
 This includes the Rust version requirement specified above.  
-Earlier versions may be compatible, but this can change with minor or patch releases.
+Earlier Rust versions may be compatible, but this can change with minor or patch releases.
 
 Which versions are affected by features and patches can be determined from the respective headings in [CHANGELOG.md](CHANGELOG.md).

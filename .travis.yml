@@ -8,6 +8,8 @@ stages:
   - ensure format
   - deny warnings
   - test
+script:
+  - cargo +$TRAVIS_RUST_VERSION test --verbose
 jobs:
   include:
     - stage: ensure format
