@@ -14,7 +14,7 @@ fn weak_assert_branch() {
 		} else if branch == "(no branch)" {
 			// Most likely a release tag.
 			eprintln!(r#"Branch assert ignored: "(no branch)""#)
-		} else if branch.contains('-') {
+		} else if branch.contains('-') || branch.contains('/') {
 			eprintln!("Branch assert ignored: Probably a feature branch")
 		} else {
 			assert_eq!(BRANCH, branch);
