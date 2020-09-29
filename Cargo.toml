@@ -13,7 +13,7 @@ categories = [TODO]
 readme = "README.md"
 include = [
 	"**/*.rs",
-	"!tests/meta_*.rs", # Tests of meta data files not included in the package.
+	"!tests/unincluded_*.rs", # Tests of meta data files not included in the package.
 	"Cargo.toml",
 	"CHANGELOG.md",
 	"CODE_OF_CONDUCT.md",
