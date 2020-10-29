@@ -9,7 +9,7 @@ stages:
   - deny warnings
   - test
 script:
-  - cargo +$TRAVIS_RUST_VERSION test --verbose
+  - cargo +$TRAVIS_RUST_VERSION test
 jobs:
   include:
     - stage: ensure format
