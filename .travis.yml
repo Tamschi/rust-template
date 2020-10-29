@@ -20,8 +20,8 @@ jobs:
     - stage: deny warnings
       if: branch = develop
       script:
-        - rustup component add clippy
-        - RUSTFLAGS='-D warnings' cargo build --all-targets
+        - rustup toolchain install nightly --profile minimal --component clippy
+        - RUSTFLAGS='-D warnings' cargo +nightly build --all-targets
   allow_failures:
     - rust: nightly
   fast_finish: true
