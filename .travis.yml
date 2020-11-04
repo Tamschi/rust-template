@@ -25,4 +25,4 @@ jobs:
   allow_failures:
     - rust: nightly
   fast_finish: true
-cache: cargo
+# cache: cargo # Caching Cargo seems to build up cache size until Travis CI grinds to a halt.
