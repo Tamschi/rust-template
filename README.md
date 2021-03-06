@@ -26,7 +26,7 @@ cargo add TODO_CRATE_NAME
 ## Example
 
 ```rust
-TODO_EXAMPLE
+// TODO_EXAMPLE
 ```
 
 ## License

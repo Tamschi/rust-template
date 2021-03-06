@@ -8,8 +8,8 @@ license = "MIT OR Apache-2.0"
 repository = "https://github.com/Tamschi/TODO_CRATE_NAME"
 homepage = "https://github.com/Tamschi/TODO_CRATE_NAME/tree/v0.0.1"
 documentation = "https://docs.rs/TODO_CRATE_NAME/0.0.1"
-keywords = [TODO]
-categories = [TODO]
+keywords = [] #TODO
+categories = [] #TODO
 readme = "README.md"
 include = [
 	"**/*.rs",
