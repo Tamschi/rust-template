@@ -1,3 +1,5 @@
+cargo-features = ["resolver"]
+
 [package]
 name = "TODO_CRATE_NAME"
 version = "0.0.1"
@@ -23,6 +25,18 @@ include = [
 resolver = "2"
 publish = false
 
+[lib]
+crate-type = ["staticlib"]
+
+[[bin]]
+name = "TODO_CRATE_NAME_build-flags"
+path = "src/build-flags.rs"
+doc = false
+required-features = ["build-flags"]
+
+[features]
+build-flags = ["dunce"]
+
 [badges]
 is-it-maintained-issue-resolution = { repository = "Tamschi/TODO_CRATE_NAME" }
 is-it-maintained-open-issues = { repository = "Tamschi/TODO_CRATE_NAME" }
@@ -34,3 +48,6 @@ doc-comment = "0.3.3"
 git_info = "0.1.2"
 version-sync = "0.9.1"
 wasm-bindgen-test = "0.3.23"
+
+[dependencies]
+dunce = { version = "1.0.1", optional = true }

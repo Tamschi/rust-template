@@ -1,0 +1,56 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
+{
+    "configurations": [
+        {
+            "name": "PlatformIO",
+            "includePath": [
+                "C:/Users/Tamme/Documents/Projekte/rust-template/include",
+                "C:/Users/Tamme/Documents/Projekte/rust-template/src",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                ""
+            ],
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true,
+                "path": [
+                    "C:/Users/Tamme/Documents/Projekte/rust-template/include",
+                    "C:/Users/Tamme/Documents/Projekte/rust-template/src",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/Tamme/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
+                    ""
+                ]
+            },
+            "defines": [
+                "PLATFORMIO=50101",
+                "ARDUINO_AVR_NANO",
+                "F_CPU=16000000L",
+                "ARDUINO_ARCH_AVR",
+                "ARDUINO=10808",
+                "__AVR_ATmega328P__",
+                ""
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "compilerPath": "C:/Users/Tamme/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "compilerArgs": [
+                "-mmcu=atmega328p",
+                ""
+            ]
+        }
+    ],
+    "version": 4
+}

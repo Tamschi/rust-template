@@ -1,0 +1,3 @@
+[toolchain]
+channel = "nightly-2021-01-07" # See <https://github.com/rust-lang/rust/issues/82104#issuecomment-784231874>.
+components = ["rust-src"]
