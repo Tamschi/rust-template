@@ -12,6 +12,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - uses: actions-rs/toolchain@v1
+      with:
+        toolchain: nightly-2021-01-07
+        profile: minimal
     - run: cat CI.toml >> Cargo.toml
     # See <https://docs.platformio.org/en/latest/integration/ci/github-actions.html>.
     - uses: actions/setup-python@v2
