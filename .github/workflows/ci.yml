@@ -7,73 +7,14 @@ on:
 
 jobs:
   test:
-    name: Test
+    name: Build
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
     - uses: actions-rs/toolchain@v1
     - run: cat CI.toml >> Cargo.toml
-    - run: cargo test --workspace --no-default-features
-    - run: cargo test --workspace
-    - run: cargo test --workspace --all-features
-
-  check:
-    name: Check on Rust ${{matrix.rust}}${{format(' ({0})', matrix.target || matrix.os)}}
-    runs-on: ${{matrix.os}}-latest
-    strategy:
-      matrix:
-        os: [macos, ubuntu, windows]
-        rust: ['nightly-2021-01-07']
-    env:
-      target: ${{matrix.target && format('--target={0}', matrix.target)}}
-      workspace: ${{matrix.no-workspace || '--workspace'}}
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions-rs/toolchain@v1
-      with:
-        toolchain: ${{matrix.rust}}
-        profile: minimal
-        target: ${{matrix.target}}
-    - run: cat CI.toml >> Cargo.toml
-    - run: cargo +${{matrix.rust}} check ${{env.target}} ${{env.workspace}} --no-default-features
-    - run: cargo +${{matrix.rust}} check ${{env.target}} ${{env.workspace}}
-    - run: cargo +${{matrix.rust}} check ${{env.target}} ${{env.workspace}} --all-features
-
-  minimal-versions:
-    name: Minimal Versions
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions-rs/toolchain@v1
-      with:
-        toolchain: 'nightly-2021-01-07'
-    - run: cat CI.toml >> Cargo.toml
-    - run: cargo +nightly-2021-01-07 update -Z minimal-versions
-    - run: cargo +nightly-2021-01-07 check --lib --no-default-features
-    - run: cargo +nightly-2021-01-07 check --lib
-    - run: cargo +nightly-2021-01-07 check --lib --all-features
-
-  clippy:
-    name: Clippy
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions-rs/toolchain@v1
-      with:
-        profile: minimal
-        components: clippy
-    - run: cat CI.toml >> Cargo.toml
-    - run: cargo +nightly-2021-01-07 clippy --workspace --no-default-features
-    - run: cargo +nightly-2021-01-07 clippy --workspace
-    - run: cargo +nightly-2021-01-07 clippy --workspace --all-features
-
-  fmt:
-    name: Formatting
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - uses: actions-rs/toolchain@v1
-      with:
-        profile: minimal
-    - run: cat CI.toml >> Cargo.toml
-    - run: cargo fmt --all -- --check
+    # See <https://docs.platformio.org/en/latest/integration/ci/github-actions.html>.
+    - uses: actions/setup-python@v2
+    - run: python -m pip install --upgrade pip
+    - run: pip install --upgrade platformio
+    - run: pio run
