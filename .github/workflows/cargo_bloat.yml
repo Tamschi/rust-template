@@ -38,6 +38,6 @@ jobs:
           key: bloat-${{ runner.os }}-cargo-build-target-${{ hashFiles('**/Cargo.lock') }}
 
       - name: Run cargo bloat
-        uses: Tamschi/cargo-bloat-action@v1
+        uses: Tamschi/cargo-bloat-action@v1.2.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
