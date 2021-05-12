@@ -8,8 +8,6 @@ jobs:
   approve-dependabot:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
-    permissions:
-      pull-requests: write
     steps:
       - name: auto-approve
         uses: actions/github-script@v4.0.2
