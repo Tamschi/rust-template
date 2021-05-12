@@ -12,7 +12,7 @@ jobs:
       - name: auto-approve
         uses: actions/github-script@v4.0.2
         with:
-          github-token: ${{secrets.AutoApproveDependabotToken}}
+          github-token: ${{ secrets.AutoApproveDependabotToken }}
           script: |
             // See <https://octokit.github.io/rest.js/v18#pulls>,
             // <https://github.com/marketplace/actions/github-script#welcome-a-first-time-contributor>.
