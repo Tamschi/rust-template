@@ -22,6 +22,7 @@ jobs:
               pull_number: context.payload.pull_request.number,
             });
 
+            console.log(reviews);
             for (review of reviews) {
               console.log(review);
               console.log(`A review exists. Exiting.`)
