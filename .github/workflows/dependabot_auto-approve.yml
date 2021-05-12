@@ -8,10 +8,13 @@ jobs:
   approve-dependabot:
     runs-on: ubuntu-latest
     if: github.actor == 'dependabot[bot]'
+    permissions:
+      pull-requests: write
     steps:
       - name: auto-approve
         uses: actions/github-script@v4.0.2
         with:
+          github-token: ${{github.token}}
           script: |
             if ((await github.pulls.listReviews({
               owner: context.payload.repository.owner.login,
@@ -29,4 +32,3 @@ jobs:
               event: 'APPROVE',
               body: '[Auto-Approve Dependabot]\n@dependabot merge',
             });
-          github-token: ${{github.token}}
