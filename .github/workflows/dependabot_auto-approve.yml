@@ -15,13 +15,12 @@ jobs:
         uses: actions/github-script@v4.0.2
         with:
           script: |
-            const reviews = github.pulls.listReviews({
+            const reviews = await github.paginate(github.pulls.listReviews({
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               pull_number: context.payload.pull_request.number,
-            });
+            }));
 
-            const reviews = await github.paginate(reviews);
             for (review of reviews) {
               console.log(review)
             }
@@ -29,6 +28,7 @@ jobs:
               console.log(`A review exists. Exiting.`)
               return;
             }
+
             await github.pulls.createReview({
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
