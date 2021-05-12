@@ -17,15 +17,13 @@ jobs:
           script: |
             // See <https://octokit.github.io/rest.js/v18#pulls>,
             // <https://github.com/marketplace/actions/github-script#welcome-a-first-time-contributor>.
-            const reviews = await github.paginate(github.pulls.listReviews.endpoint.merge({
+            const reviews = await github.pulls.listReviews({
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               pull_number: context.payload.pull_request.number,
-            }));
+            });
 
-            console.log(reviews);
-            for (review of reviews) {
-              console.log(review);
+            for (review of reviews.data) {
               console.log(`A review exists. Exiting.`)
               return;
             }
