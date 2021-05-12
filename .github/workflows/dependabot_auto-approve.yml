@@ -19,11 +19,14 @@ jobs:
               owner: context.payload.repository.owner.login,
               repo: context.payload.repository.name,
               pull_number: context.payload.pull_request.number,
-              per_page: 1,
             });
 
-            if ((await github.paginate(reviews)).length > 0) {
-              console.log("A review exists. Exiting.")
+            const reviews = await github.paginate(reviews);
+            for (review of reviews) {
+              console.log(review)
+            }
+            if (reviews.length > 0) {
+              console.log(`A review exists. Exiting.`)
               return;
             }
             await github.pulls.createReview({
