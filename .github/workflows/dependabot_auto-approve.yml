@@ -14,7 +14,6 @@ jobs:
       - name: auto-approve
         uses: actions/github-script@v4.0.2
         with:
-          github-token: ${{github.token}}
           script: |
             const reviews = github.pulls.listReviews({
               owner: context.payload.repository.owner.login,
