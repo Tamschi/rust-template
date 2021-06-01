@@ -27,7 +27,7 @@ Yanked versions are still available for download, so your builds will not break 
 Please include it in your version control (and source release packages for executables). Cargo does this by default.
 
 While there will be advisories about any security issues and undefined behaviour, other bugfix releases are more quiet.  
-To be notified automatically, use for example [Dependabot] with [`package-ecosystem: cargo`](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates#package-ecosystem).
+To be notified automatically, either subscribe to releases through the repository watch feature on GitHub or use for example [Dependabot] with [`package-ecosystem: cargo`](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/configuration-options-for-dependency-updates#package-ecosystem).
 To check only for vulnerabilities, use [cargo-audit](https://github.com/RustSec/rustsec/tree/main/cargo-audit#readme) instead, which is available as a GitHub Action as [actions-rs/audit-check](https://github.com/actions-rs/audit-check#readme).
 
 Once a version becomes yanked/unsupported, please update or upgrade to a supported version in a timely manner.
