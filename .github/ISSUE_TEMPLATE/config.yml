@@ -1,4 +1,6 @@
-contact_links:
-  - name: Vulnerability Report
-    url: https://schichler.dev
-    about: "Do you have a security issue to report? Please contact me privately first.\nYou can reach me via email or XMPP at tamme@schichler.dev."
+anything_else:
+  - name: Anything else?
+    url: https://github.com/Tamschi/TODO_CRATE_NAME/discussions
+    about: >
+      For **questions**, **ideas** or **general discussion**, please use the Discussions tab linked here.  
+      I'd also love to hear about [your projects using this crate](https://github.com/Tamschi/rust-template/discussions/categories/show-and-tell) there!
