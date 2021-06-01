@@ -9,7 +9,7 @@
 Faulty versions are [yanked](https://doc.rust-lang.org/cargo/commands/cargo-yank.html), where possible after a Semver-compatible update is made available, and added to the table above as unsupported.  
 They are also marked with an additional `v….….…-yanked` tag in Git to make them easily recognisable, but original release tags are not removed.
 
-Advisories are published [through GitHub on this repository](https://github.com/Tamschi/TODO_CRATE_NAME/security/advisories) and [RustSec/advisory-db](https://github.com/RustSec/advisory-db).
+Security advisories are published through [the respective section on this repository here](https://github.com/Tamschi/TODO_CRATE_NAME/security/advisories) and [RustSec/advisory-db](https://github.com/RustSec/advisory-db).
 
 ## Reporting a Vulnerability
 
