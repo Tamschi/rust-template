@@ -27,7 +27,7 @@ publish = false
 [badges]
 is-it-maintained-issue-resolution = { repository = "Tamschi/TODO_CRATE_NAME" }
 is-it-maintained-open-issues = { repository = "Tamschi/TODO_CRATE_NAME" }
-maintenance = { status = "experimental" }
+maintenance = { status = "experimental" } # This may differ between branches.
 
 [dev-dependencies]
 cargo-husky = "1.5.0"
