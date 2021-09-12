@@ -49,7 +49,17 @@ While there are no formal style requirements, here are some suggestions that mig
 
 * If you use macros, put them nearby.
 
-    I normally place one-off macros directly above the item I need them for.
+  I normally place one-off macros directly above the item I need them for.
+
+* When writing comments and documentation, try to break lines semantically.
+
+  It's more readable than breaking purely by line width this way, in my eyes.
+
+  Just after commas tends to be a good place for this, of course,
+  but please try to also take sentence flow into account when there are none.
+  If there are multiple sentences in a paragraph, you may want to put them in separate lines.
+
+  Please do not manually break lines in the rendered documentation (trailing double-space), unless this strongly improved legibility.
 
 ### Meta data
 
