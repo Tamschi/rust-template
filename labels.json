@@ -2,7 +2,7 @@
 	{
 		"name": "breaking",
 		"color": "d73a4a",
-		"description": "Introduces a breaking change.\nPlease add this on relevant merge-requests, and also on issues requesting such a change."
+		"description": "Introduces a breaking change. Please add this on relevant merge-requests, and also on issues requesting such a change."
 	},
 	{
 		"name": "good first issue",
@@ -74,7 +74,7 @@
 	{
 		"name": "state: inactive",
 		"color": "cfd3d7",
-		"description": "No action needed or possible.\nThe issue is either fixed or addressed better by other issues.",
+		"description": "No action needed or possible. The issue is either fixed or addressed better by other issues.",
 		"aliases": [
 			"duplicate"
 		]
