@@ -1,3 +1,6 @@
+# labels.json adapted from <https://raw.githubusercontent.com/seantrane/github-label-presets/master/labels.json>.
+# See also <https://seantrane.com/posts/logical-colorful-github-labels-18230/>.
+
 name: Update Labels
 on:
   push:
