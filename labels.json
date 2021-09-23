@@ -2,12 +2,38 @@
   {
     "name": "breaking",
     "color": "d73a4a",
-    "description": "Introduces a breaking change.",
+    "description": "Introduces a breaking change.\nPlease add this on relevant merge-requests, and also on issues requesting such a change.",
     "aliases": [
       "breaking change",
       "breaking-change",
       "Type: Breaking Change",
       "type: breaking"
+    ]
+  },
+  {
+    "name": "good first issue",
+    "color": "7057ff",
+    "description": "Good for newcomers",
+    "aliases": [
+      "beginner-friendly",
+      "beginner",
+      "good for beginner",
+      "Good for beginners",
+      "good-starter-issue",
+      "starter-issue",
+      "starter",
+      "status: good starter issue"
+    ]
+  },
+  {
+    "name": "help wanted",
+    "color": "008672",
+    "description": "Extra attention is needed",
+    "aliases": [
+      "Patch Welcome",
+      "status: help wanted",
+      "Status: PR Welcome",
+      "Status: Ready for PR"
     ]
   },
   {
@@ -35,58 +61,31 @@
     "color": "fbca04"
   },
   {
-    "name": "good first issue",
-    "color": "7057ff",
-    "description": "Good for newcomers.",
-    "aliases": [
-      "beginner-friendly",
-      "beginner",
-      "good for beginner",
-      "Good for beginners",
-      "good-starter-issue",
-      "starter-issue",
-      "starter",
-      "status: good starter issue"
-    ]
-  },
-  {
-    "name": "help",
-    "color": "0e8a16",
-    "aliases": [
-      "help wanted",
-      "Patch Welcome",
-      "status: help wanted",
-      "Status: PR Welcome",
-      "Status: Ready for PR"
-    ]
-  },
-  {
-    "name": "priority: now",
+    "name": "priority: first",
     "color": "d73a4a",
+    "description": "I'll try to take care of this soon-ish if nobody else does.",
     "aliases": [
       "priority: critical",
       "Priority: Critical"
     ]
   },
   {
-    "name": "priority: soon",
+    "name": "priority: next",
     "color": "ffb8c6",
-    "aliases": [
-      "priority: medium",
-      "Priority: Medium"
-    ]
-  },
-  {
-    "name": "priority: 2day",
-    "color": "fbca04",
+    "description": "I'll probably get to it, eventually.",
     "aliases": [
       "priority: high",
       "Priority: High"
     ]
   },
   {
-    "name": "semantic-release",
-    "color": "e6e6e6"
+    "name": "priority: someday",
+    "color": "fbca04",
+    "description": "If you need this, please let me know!",
+    "aliases": [
+      "priority: medium",
+      "Priority: Medium"
+    ]
   },
   {
     "name": "state: approved",
@@ -109,7 +108,7 @@
   {
     "name": "state: pending",
     "color": "fbca04",
-    "description": "Taking action, but need a few things to happen first. A feature that needs dependencies merged, or a bug that needs further data.",
+    "description": "Waiting on other proceedings (aside from information)",
     "aliases": [
       "in progress",
       "on hold",
@@ -121,14 +120,29 @@
   },
   {
     "name": "state: inactive",
-    "color": "e6e6e6",
-    "description": "No action needed or possible. The issue is either fixed, addressed better by other issues, or just out of product scope.",
+    "color": "cfd3d7",
+    "description": "No action needed or possible.\nThe issue is either fixed or addressed better by other issues.",
     "aliases": [
-      "duplicate",
-      "invalid",
-      "stale",
       "Status: Abandoned",
       "status: duplicate",
+      "duplicate",
+      "status: duplicate"
+    ]
+  },
+  {
+    "name": "state: question",
+    "color": "d876e3",
+    "description": "Further information is requested",
+    "aliases": [
+      "question"
+    ]
+  },
+  {
+    "name": "state: denied",
+    "color": "e4e669",
+    "description": "This doesn't seem right",
+    "aliases": [
+      "invalid",
       "status: wontfix",
       "wont-fix",
       "wontfix"
@@ -137,14 +151,14 @@
   {
     "name": "type: bug",
     "color": "d73a4a",
-    "description": "Something isn't working.",
+    "description": "Something isn't working as expected",
     "aliases": [
       "bug",
       "Type: Bug"
     ]
   },
   {
-    "name": "type: chore",
+    "name": "type: upkeep",
     "color": "fef2c0",
     "description": "Converting measurements, reorganizing folder structure, and other necessary (but less impactful) tasks.",
     "aliases": [
@@ -160,25 +174,7 @@
     ]
   },
   {
-    "name": "type: discussion",
-    "color": "d4c5f9",
-    "description": "Questions, proposals and info that requires discussion.",
-    "aliases": [
-      "discussion",
-      "feedback",
-      "help wanted",
-      "idea",
-      "Idea",
-      "Proposal",
-      "proposal",
-      "question",
-      "type: design",
-      "Type: Question",
-      "type: question"
-    ]
-  },
-  {
-    "name": "type: docs",
+    "name": "type: documentation",
     "color": "fef2c0",
     "description": "Related to documentation and information.",
     "aliases": [
@@ -206,7 +202,7 @@
   {
     "name": "type: fix",
     "color": "91ca55",
-    "description": "Iterations on existing features or infrastructure.",
+    "description": "Iterations on existing features or infrastructure",
     "aliases": [
       "fix",
       "improvement",
@@ -219,7 +215,7 @@
   {
     "name": "type: security",
     "color": "d73a4a",
-    "description": "Something is vulnerable or not secure.",
+    "description": "Something is vulnerable or not secure",
     "aliases": [
       "security"
     ]
@@ -227,24 +223,24 @@
   {
     "name": "type: testing",
     "color": "fbca04",
-    "description": "Related to testing.",
+    "description": "Related to testing",
     "aliases": [
       "test",
       "testing"
     ]
   },
   {
-    "name": "work: chaotic",
+    "name": "work: novel",
     "color": "fbca04",
-    "description": "The situation is chaotic, novel practices used.",
+    "description": "There's a problem, and both goal and solution are unclear.",
     "aliases": [
       "chaotic"
     ]
   },
   {
-    "name": "work: complex",
+    "name": "work: emergent",
     "color": "d4c5f9",
-    "description": "The situation is complex, emergent practices used.",
+    "description": "The goal isn't known, but a plan exists.",
     "aliases": [
       "complex"
     ]
@@ -252,17 +248,33 @@
   {
     "name": "work: complicated",
     "color": "ffb8c6",
-    "description": "The situation is complicated, good practices used.",
+    "description": "A specific goal already exists, but the path there isn't certain.",
     "aliases": [
       "complicated"
     ]
   },
   {
-    "name": "work: obvious",
+    "name": "work: clear",
     "color": "91ca55",
-    "description": "The situation is obvious, best practices used.",
+    "description": "A known solution is (to be) implemented.",
     "aliases": [
       "obvious"
+    ]
+  },
+  {
+    "name": "domain: Rust",
+    "color": "000000",
+    "description": "Involves Rust code.",
+    "aliases": [
+      "rust"
+    ]
+  },
+  {
+    "name": "domain: GitHub Actions",
+    "color": "000000",
+    "description": "Involves GitHub Actions.",
+    "aliases": [
+      "github_actions"
     ]
   }
 ]
