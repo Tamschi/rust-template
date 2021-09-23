@@ -20,4 +20,5 @@ jobs:
         --dry-run
         --access-token ${{ secrets.GITHUB_TOKEN }}
         --labels labels.json
+        --allow-added-labels
         ${{ github.repository }}
