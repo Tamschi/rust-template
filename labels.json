@@ -60,8 +60,11 @@
 	},
 	{
 		"name": "state: blocked",
-		"color": "d73a4a",
-		"description": "Something is blocking action (aside from pure proceedings or missing information)."
+		"color": "ffffff",
+		"description": "Something is blocking action (aside from pure proceedings or missing information).",
+		"aliases": [
+			"wontfix"
+		]
 	},
 	{
 		"name": "state: pending",
@@ -89,8 +92,7 @@
 		"color": "e4e669",
 		"description": "It could just be out of scope, but either way it won't be implemented here.",
 		"aliases": [
-			"invalid",
-			"wontfix"
+			"invalid"
 		]
 	},
 	{
