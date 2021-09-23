@@ -56,7 +56,7 @@
 	},
 	{
 		"name": "priority: someday",
-		"color": "fbca04",
+		"color": "000000",
 		"description": "If you need this, please let me know!"
 	},
 	{
@@ -79,7 +79,7 @@
 	},
 	{
 		"name": "state: inactive",
-		"color": "cfd3d7",
+		"color": "000000",
 		"description": "No action needed or possible. The issue is either fixed or addressed better by other issues.",
 		"aliases": [
 			"duplicate"
