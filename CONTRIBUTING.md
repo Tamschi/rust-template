@@ -94,7 +94,7 @@ See <https://github.com/Tamschi/TODO_CRATE_NAME/issues/labels> for details on in
 
 - `effort:`
 
-  Relative effort. There's no specific unit of measurement.
+  Relative effort required. There's no specific unit of measurement.
 
 - `priority:`
 
