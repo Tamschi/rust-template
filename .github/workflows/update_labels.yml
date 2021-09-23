@@ -16,4 +16,5 @@ jobs:
     - run: "npx github-label-sync
       --dry-run
       --access-token ${{ secrets.GITHUB_TOKEN }}
-      --labels labels.json"
+      --labels labels.json
+      ${{ github.repository }}"
