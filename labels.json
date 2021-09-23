@@ -68,43 +68,24 @@
 	{
 		"name": "state: approved",
 		"color": "91ca55",
-		"description": "Approved to proceed.",
-		"aliases": [
-			"approved"
-		]
+		"description": "Approved to proceed."
 	},
 	{
 		"name": "state: blocked",
 		"color": "d73a4a",
-		"description": "Something is blocking action.",
-		"aliases": [
-			"blocked",
-			"Status: Blocked",
-			"status: blocked"
-		]
+		"description": "Something is blocking action (aside from pure proceedings or missing information)."
 	},
 	{
 		"name": "state: pending",
 		"color": "fbca04",
-		"description": "Waiting on other proceedings (aside from information)",
-		"aliases": [
-			"in progress",
-			"on hold",
-			"pending",
-			"Status: In Progress",
-			"Status: Review Needed",
-			"watchlist"
-		]
+		"description": "Waiting on other proceedings (aside from information)"
 	},
 	{
 		"name": "state: inactive",
 		"color": "cfd3d7",
 		"description": "No action needed or possible.\nThe issue is either fixed or addressed better by other issues.",
 		"aliases": [
-			"Status: Abandoned",
-			"status: duplicate",
-			"duplicate",
-			"status: duplicate"
+			"duplicate"
 		]
 	},
 	{
@@ -120,10 +101,7 @@
 		"color": "e4e669",
 		"description": "This doesn't seem right",
 		"aliases": [
-			"invalid",
-			"status: wontfix",
-			"wont-fix",
-			"wontfix"
+			"invalid"
 		]
 	},
 	{
@@ -131,8 +109,7 @@
 		"color": "d73a4a",
 		"description": "Something isn't working as expected",
 		"aliases": [
-			"bug",
-			"Type: Bug"
+			"bug"
 		]
 	},
 	{

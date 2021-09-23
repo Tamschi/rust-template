@@ -16,8 +16,8 @@ jobs:
       with:
         path: ~/.npm
         key: ${{ runner.os }}-npm
-    - run: "npx github-label-sync
-      --dry-run
-      --access-token ${{ secrets.GITHUB_TOKEN }}
-      --labels labels.json
-      ${{ github.repository }}"
+    - run: npx github-label-sync
+        --dry-run
+        --access-token ${{ secrets.GITHUB_TOKEN }}
+        --labels labels.json
+        ${{ github.repository }}
