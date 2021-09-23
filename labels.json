@@ -41,29 +41,17 @@
 	{
 		"name": "priority: first",
 		"color": "d73a4a",
-		"description": "I'll try to take care of this soon-ish if nobody else does.",
-		"aliases": [
-			"priority: critical",
-			"Priority: Critical"
-		]
+		"description": "I'll try to take care of this soon-ish if nobody else does."
 	},
 	{
 		"name": "priority: next",
 		"color": "ffb8c6",
-		"description": "I'll probably get to it, eventually.",
-		"aliases": [
-			"priority: high",
-			"Priority: High"
-		]
+		"description": "I'll probably get to it, eventually."
 	},
 	{
 		"name": "priority: someday",
 		"color": "fbca04",
-		"description": "If you need this, please let me know!",
-		"aliases": [
-			"priority: medium",
-			"Priority: Medium"
-		]
+		"description": "If you need this, please let me know!"
 	},
 	{
 		"name": "state: approved",
@@ -99,9 +87,10 @@
 	{
 		"name": "state: denied",
 		"color": "e4e669",
-		"description": "This doesn't seem right",
+		"description": "It could just be out of scope, but either way it won't be implemented here.",
 		"aliases": [
-			"invalid"
+			"invalid",
+			"wontfix"
 		]
 	},
 	{
