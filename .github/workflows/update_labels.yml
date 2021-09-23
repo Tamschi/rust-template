@@ -1,0 +1,19 @@
+name: Update Labels
+on:
+  push:
+    branches: [develop]
+
+jobs:
+  deny-warnings:
+    name: Update Labels
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/cache@v2
+      with:
+        path: ~/.npm
+        key: ${{ runner.os }}-npm
+    - run: "npx github-label-sync
+      --dry-run
+      --access-token ${{ secrets.GITHUB_TOKEN }}
+      --labels labels.json"
