@@ -2,7 +2,7 @@
 	{
 		"name": "breaking",
 		"color": "d73a4a",
-		"description": "Introduces a breaking change. Please add this on relevant merge-requests, and also on issues requesting such a change."
+		"description": "Introduces or requests a breaking change."
 	},
 	{
 		"name": "good first issue",
@@ -106,7 +106,7 @@
 	{
 		"name": "type: upkeep",
 		"color": "0366d6",
-		"description": "Converting measurements, reorganizing folder structure, and other necessary (but less impactful) tasks.",
+		"description": "Converting measurements, reorganizing folder structure, and other necessary tasks.",
 		"aliases": [
 			"dependencies"
 		]
