@@ -185,6 +185,11 @@
 		]
 	},
 	{
+		"name": "Hacktoberfest",
+		"color": "91A88C",
+		"description": "A good-for-Hacktoberfest issue. This label is only maintained in October."
+	},
+	{
 		"name": "hacktoberfest-accepted",
 		"color": "A88771",
 		"description": "Thank you for your contribution!"
