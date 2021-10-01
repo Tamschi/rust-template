@@ -183,5 +183,15 @@
 		"aliases": [
 			"github_actions"
 		]
+	},
+	{
+		"name": "hacktoberfest-accepted",
+		"color": "A88771",
+		"description": "Thank you for your contribution!"
+	},
+	{
+		"name": "spam",
+		"color": "F74700",
+		"description": "Measure of last resort for Hacktoberfest purposes. Don't use this otherwise."
 	}
 ]
