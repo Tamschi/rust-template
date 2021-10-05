@@ -14,11 +14,11 @@ jobs:
           # The default token is enough to comment, but Dependabot will only comply if you impersonate a user with write access.
           github-token: ${{secrets.AUTO_APPROVE_DEPENDABOT_TOKEN}}
           script: |
-            if github.rest.pulls.listReviews == false {
+            if (github.rest.pulls.listReviews == false) {
               throw "`listReviews` not found.";
             }
 
-            if github.rest.pulls.createReview == false {
+            if (github.rest.pulls.createReview == false) {
               throw "`createReview` not found.";
             }
 
