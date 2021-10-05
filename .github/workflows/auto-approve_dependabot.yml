@@ -28,7 +28,7 @@ jobs:
             });
 
             for (review of reviews.data) {
-              console.log(`A review exists. Exiting.`)
+              console.log(`A review exists. Exiting.`);
               return;
             }
 
