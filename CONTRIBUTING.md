@@ -98,7 +98,7 @@ See <https://github.com/Tamschi/TODO_CRATE_NAME/issues/labels> for details on in
 
 - `priority:`
 
-  Vaguely informs my schedule, **cross-respository**.
+  Vaguely informs my schedule, **cross-repository**.
 
   You're welcome to let me know that (and ideally why) you'd like to see a specific change and I'll take that into account.
 
