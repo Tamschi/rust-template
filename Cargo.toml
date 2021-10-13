@@ -17,6 +17,7 @@ include = [
 	"Cargo.toml",
 	"CHANGELOG.md",
 	"CODE_OF_CONDUCT.md",
+	"COPYRIGHT.md",
 	"LICENSE-*",
 	"README.md",
 	"SECURITY.md",
