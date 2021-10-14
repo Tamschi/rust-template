@@ -1,5 +1,9 @@
 # Largely inspired by https://github.com/dtolnay/syn/blob/master/.github/workflows/ci.yml under MIT OR Apache-2.0.
 name: CI
+
+permissions:
+  contents: read
+
 on:
   pull_request:
   push:

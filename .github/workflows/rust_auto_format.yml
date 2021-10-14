@@ -1,5 +1,8 @@
 name: Rust Auto Format
 
+permissions:
+  contents: write
+
 on:
   push:
     branches: [ develop ]
