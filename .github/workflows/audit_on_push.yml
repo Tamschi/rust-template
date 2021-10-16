@@ -3,7 +3,7 @@ name: Push Audit
 permissions:
   contents: read
   issues: write
-  pull-request: write # Probably.
+  pull-requests: write # Probably.
 
 on:
   push:
