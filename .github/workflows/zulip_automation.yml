@@ -12,4 +12,4 @@ jobs:
     name: Touch Zulip Stream
     runs-on: ubuntu-latest
     steps:
-      - run: 'curl -X POST https://iteration-square-automation.schichler.dev/.netlify/functions/touch_project_stream --data-raw ${{ github.repository }} --header "Authorization: ${{ secrets.GITHUB_TOKEN }}"'
+      - run: 'curl -X POST https://iteration-square-automation.schichler.dev/.netlify/functions/touch_project_stream --data-raw ${{ github.repository.name }} --header "Authorization: ${{ secrets.GITHUB_TOKEN }}"'
