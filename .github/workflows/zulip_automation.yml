@@ -33,4 +33,5 @@ jobs:
           --header "Authorization: ${{ secrets.GITHUB_TOKEN }}"
           --header 'Project: ${{ github.event.repository.name }}'
           --header 'Tag: ${{ steps.find_tag.outputs.SOURCE_TAG }}'
+          -d ""
           --fail
