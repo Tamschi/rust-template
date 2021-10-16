@@ -31,7 +31,6 @@ jobs:
       - run: >
           curl -X POST https://iteration-square-automation.schichler.dev/.netlify/functions/announce_tag
           --header "Authorization: ${{ secrets.GITHUB_TOKEN }}"
-          -G
           --data-urlencode 'project=${{ github.event.repository.name }}'
           --data-urlencode 'tag=${{ steps.branch_name.outputs.SOURCe_TAG }}'
           --fail
