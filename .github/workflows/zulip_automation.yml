@@ -1,6 +1,6 @@
 name: Zulip Automation
 
-permissions: # None should be needed.
+permissions: {} # None should be needed.
 
 on:
   push:

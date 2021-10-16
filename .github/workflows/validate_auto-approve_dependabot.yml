@@ -1,6 +1,6 @@
 name: 'Validate Auto-Approve Dependabot'
 
-permissions: # None, using a custom token.
+permissions: {} # None, using a custom token.
 
 # That bricked itself during the last major version upgrade of `actions/github-script` to `v5`. Whoops.
 # This workflow here now makes sure the API is there at least.
