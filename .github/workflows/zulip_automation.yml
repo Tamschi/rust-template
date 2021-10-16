@@ -1,7 +1,6 @@
 name: Zulip Automation
 
-permissions:
-  metadata: read
+permissions: # None should be needed.
 
 on:
   push:
@@ -11,5 +10,6 @@ on:
 jobs:
   touch_zulip_stream:
     name: Touch Zulip Stream
+    runs-on: ubuntu-latest
     steps:
       - run: 'curl -X POST https://iteration-square-automation.schichler.dev/.netlify/functions/touch_project_stream --data-raw ${{ github.repository }} --header "Authorization: ${{ secrets.GITHUB_TOKEN }}"'
