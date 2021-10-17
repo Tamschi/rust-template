@@ -1,6 +1,7 @@
 name: 'Validate Auto-Approve Dependabot'
 
-permissions: {} # None, using a custom token.
+permissions:
+  pull-requests: read
 
 # That bricked itself during the last major version upgrade of `actions/github-script` to `v5`. Whoops.
 # This workflow here now makes sure the API is there at least.
@@ -15,7 +16,7 @@ jobs:
         uses: actions/github-script@v5
         with:
           # The default token is enough to comment, but Dependabot will only comply if you impersonate a user with write access.
-          github-token: ${{secrets.AUTO_APPROVE_DEPENDABOT_TOKEN}}
+          github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
             if (github.rest.pulls.listReviews == false) {
               throw "`listReviews` not found.";
