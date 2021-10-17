@@ -6,8 +6,9 @@ permissions:
 on:
   push:
     branches: [ develop ]
-  pull_request:
-    branches: [ develop ]
+#  # Deactivated pending further investigation into #36.
+#  pull_request:
+#    branches: [ develop ]
 
 env:
   CARGO_TERM_COLOR: always
