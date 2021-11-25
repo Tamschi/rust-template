@@ -87,7 +87,7 @@ When adding your change, replace:
 
 - `Revisions` with `Features` or `**Breaking changes**`, iff your contribution falls into one of those categories instead.
 - `<your GitHub @>` with your GitHub username.
-- `<PR #>` with the id of your pull-requestion. (Squashing is optional)
+- `<PR #>` with the id of your pull-request. (Squashing is optional)
 - `Change title` and `> Further description…` as appropriate.
 
 See non-contributed changes from earlier releases for examples.
