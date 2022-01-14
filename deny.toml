@@ -18,12 +18,7 @@ copyleft = "deny"
 allow = [
     "MIT",
     "Apache-2.0",
-    "BSD-3-Clause",
-    "ISC",
     "Zlib",
-    "0BSD",
-    "BSD-2-Clause",
-    "CC0-1.0",
 ]
 default = "deny"
 
@@ -39,6 +34,7 @@ highlight = "all"
 # Certain crates/versions that will be skipped when doing duplicate detection.
 skip = [
 	# Format: { name = "a-crate-name", version = "0.1" }, # from another-crate v0.26.0
+	{ name = "cfg-if", version = "0.1" }, # from wasm-bindgen-test v0.3.28
 ]
 
 [sources]
