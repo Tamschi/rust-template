@@ -1,4 +1,4 @@
-# Lifted (at least originally) verbatim from Bevy v0.6.0 under MIT OR Apache-2.0.
+# Lifted almost entirely verbatim from Bevy v0.6.0 under MIT OR Apache-2.0.
 # See <https://github.com/bevyengine/bevy/blob/458cb7a9e93dab3127bb99ce7bf8cfc3af18851d/.github/workflows/dependencies.yml>.
 
 name: Dependencies
@@ -14,7 +14,6 @@ on:
       - 'deny.toml'
     branches-ignore:
       - 'dependabot/**'
-      - staging-squash-merge.tmp
   schedule:
     - cron: "0 0 * * 0"
 
