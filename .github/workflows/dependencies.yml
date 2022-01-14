@@ -1,7 +1,10 @@
-# Lifted almost entirely verbatim from Bevy v0.6.0 under MIT OR Apache-2.0.
+# Lifted mostly verbatim from Bevy v0.6.0 under MIT OR Apache-2.0.
 # See <https://github.com/bevyengine/bevy/blob/458cb7a9e93dab3127bb99ce7bf8cfc3af18851d/.github/workflows/dependencies.yml>.
 
 name: Dependencies
+
+permissions:
+  contents: read
 
 on:
   pull_request:
@@ -29,8 +32,10 @@ jobs:
         with:
           toolchain: stable
           override: true
-      - name: Install cargo-deny
-        run: cargo install cargo-deny
+      - uses: actions-rs/install@v0.1
+        with:
+          crate: cargo-deny
+          use-tool-cache: true
       - name: Check for security advisories and unmaintained crates
         run: cargo deny check advisories
 
@@ -42,8 +47,10 @@ jobs:
         with:
           toolchain: stable
           override: true
-      - name: Install cargo-deny
-        run: cargo install cargo-deny
+      - uses: actions-rs/install@v0.1
+        with:
+          crate: cargo-deny
+          use-tool-cache: true
       - name: Check for banned and duplicated dependencies
         run: cargo deny check bans
 
@@ -55,8 +62,10 @@ jobs:
         with:
           toolchain: stable
           override: true
-      - name: Install cargo-deny
-        run: cargo install cargo-deny
+      - uses: actions-rs/install@v0.1
+        with:
+          crate: cargo-deny
+          use-tool-cache: true
       - name: Check for unauthorized licenses
         run: cargo deny check licenses
 
@@ -68,7 +77,9 @@ jobs:
         with:
           toolchain: stable
           override: true
-      - name: Install cargo-deny
-        run: cargo install cargo-deny
+      - uses: actions-rs/install@v0.1
+        with:
+          crate: cargo-deny
+          use-tool-cache: true
       - name: Checked for unauthorized crate sources
         run: cargo deny check sources
