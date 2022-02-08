@@ -67,8 +67,12 @@ jobs:
     - uses: actions-rs/toolchain@v1.0.7
       with:
         toolchain: nightly
+        override: true
+    - uses: Swatinem/rust-cache@v1
+    - run: cargo install cargo-hack
     - run: cat CI.toml >> Cargo.toml
-    - run: cargo +nightly update -Z minimal-versions
-    - run: cargo +nightly check --lib --locked --no-default-features
-    - run: cargo +nightly check --lib --locked
-    - run: cargo +nightly check --lib --locked --all-features
+    - run: cargo hack --remove-dev-deps --workspace
+    - run: cargo update -Z minimal-versions
+    - run: cargo hack check --lib --locked --no-default-features
+    - run: cargo hack check --lib --locked
+    - run: cargo hack check --lib --locked --all-features
