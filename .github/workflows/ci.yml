@@ -7,7 +7,7 @@ permissions:
 on:
   pull_request:
   push:
-  schedule: [cron: "0 8 * * 5"] # 8:00 on Fridays
+  # This used to also be scheduled, but apparently GitHub also turns it off otherwise when deactivating that due to repository inactivity.
 
 jobs:
   test:
