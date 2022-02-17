@@ -46,7 +46,7 @@ jobs:
       with:
         toolchain: nightly
         profile: minimal
-        components: miri
+        components: miri, rust-src
     - run: cat CI.toml >> Cargo.toml
     - run: cargo +nightly miri test --workspace --locked --no-default-features
     - run: cargo +nightly miri test --workspace --locked
