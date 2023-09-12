@@ -5,6 +5,15 @@ mod constants;
 use constants::*;
 
 #[test]
+fn rust_version() {
+	// This will become less useful with patches, so I'm on the lookout for a crate that lets me test major, minor and revision independently.
+	version_sync::assert_contains_regex!(
+		"Cargo.toml",
+		&format!("^rust-version = \"{RUST_VERSION}\"$")
+	);
+}
+
+#[test]
 fn changelog() {
 	// This will become less useful with patches, so I'm on the lookout for a crate that lets me test major, minor and revision independently.
 	version_sync::assert_contains_regex!("CHANGELOG.md", "^## {version}$");
